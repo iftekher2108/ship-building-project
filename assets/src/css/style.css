@@ -1,0 +1,179 @@
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+:root {
+    --nav-text:white;
+}
+
+.active {
+    background: var(--sp-primary);
+    color: var(--sp-white);
+    padding: 0.3rem 1rem !important;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.active:hover {
+    color: var(--sp-white);
+}
+
+/* ===================== navbar ============================== */
+.menu {
+    background: rgba(255, 255, 255, 0.377);
+    backdrop-filter:blur(0.3px) ;
+}
+.slide-content {
+    background: rgba(255, 255, 255, 0.11);
+    backdrop-filter:blur(1.3px) ;
+}
+
+li {
+    list-style: none;  
+}
+.menu ul li a {
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding:0.3rem;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.menu ul li a::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    height: 3px;
+    border-radius:5px;
+    width: 0%;
+    text-align: center;
+    background: var(--sp-primary);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
+
+.menu ul li a:hover::after {
+    width: 100%;
+    background: var(--sp-primary);
+
+}
+
+
+/* ======================= custom slide ============================= */
+
+
+.custom-slide {
+    min-height: 100%;
+}
+
+/* ====================== welcome to ========================== */
+.about-us {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../../images/wellcome.png);
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:scroll
+}
+
+/* ====================== welcome to ========================== */
+
+
+/* ======================= table ============================== */
+table thead th {
+    background: var(--sp-primary) !important;
+    color: var(--sp-white) !important;
+}
+
+/* ========================= table =============================== */
+
+
+/* ========================= we unite =============================== */
+
+.we-unite {
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6)),url(../../images/we-unite.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment:scroll;
+}
+
+/* ======================== we unite =================================== */
+
+
+/* ======================== partner slide img ========================== */
+.partner-slide img {
+    height: 150px;
+
+}
+
+/* ========================= partner slide img ========================== */
+
+
+/* =============================== footer ============================== */
+
+:where(.quick-link,.widget-3) ul li {
+    list-style-type: square;
+    color: var(--sp-primary);
+}
+:where(.quick-link,.widget-3) ul li a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+:where(.quick-link,.widget-3) ul li a:hover {
+    color: var(--sp-primary) !important;
+}
+
+.social-icon a {
+    color: var(--sp-white);
+    padding: 0.2rem 0.55rem;
+    background: var(--sp-primary);
+    border:2px solid var(--sp-primary);
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+     box-shadow: var(--sp-box-shadow);
+}
+
+.social-icon a:hover {
+    color: var(--sp-primary);
+    background: var(--sp-white);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+   
+}
+
+/* ========================== footer ======================================= */
